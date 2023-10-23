@@ -15,10 +15,10 @@ header {
     display: flex;
     align-items: center;
     margin-right: 2.5rem;
+    margin-left: 2.5rem;
 }
 
 .nav__itens {
-    margin-left: 2.5rem;
     display: flex;
     align-items: center;
     gap: 2.5rem;
@@ -28,15 +28,20 @@ header {
     color: var(--branco);
     font-size: 1rem;
     align-self: center;
+
+    width: max-content;
 }
 
+.search {
+    width: max-content;
+}
 
-.seach-input {
+.search-input {
     width: 10.6rem;
     height: 38px;
     padding: 1rem;
-    width: 60%;
     font-size: 15px;
+    margin-right: 1rem;
 }
 
 .search-btn {
@@ -53,16 +58,12 @@ header {
         height: 24px;
     }
 
-    .nav__itens {
-            gap: 1.25rem;
-    }
-
     .nav__item {
         font-size: 13px;
     }
 
     .seach-input {
-        width: 145px;    
+        /* width: 60%; */
         font-size: 13px;
     }
 
@@ -72,12 +73,12 @@ header {
     .header {
         flex-direction: column;
     }
+    
     .header__nav {
         display: none;
     }
 
-
     .seach-input {
-        width: 60%;
+        /* width: 60%; */
     }
 }
