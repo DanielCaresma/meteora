@@ -1,4 +1,4 @@
-header {
+.header {
     background-color: var(--preto);
     
     display: flex;
@@ -14,25 +14,19 @@ header {
 .header__nav {
     display: flex;
     align-items: center;
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
+    margin-left: 10px;
 }
 
 .nav__itens {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 12px;
 }
 
 .nav__item {
     color: var(--branco);
     font-size: 1rem;
     align-self: center;
-
-    width: max-content;
-}
-
-.search {
     width: max-content;
 }
 
@@ -41,7 +35,6 @@ header {
     height: 38px;
     padding: 1rem;
     font-size: 15px;
-    margin-right: 1rem;
 }
 
 .search-btn {
@@ -49,36 +42,66 @@ header {
     border: 1px solid white;
     font-weight: 500;
     padding: 9px 12px;
+    height: 38px;
+}
+
+.fa-bars, 
+.fa-xmark {
+    display: none;
 }
 
 
 @media screen and (max-width: 768px) {
+    .header {
+        background-color: transparent;
+        flex-direction: column;
+        padding: 0;
+    }
+
     .header__logo {
         width: 100px;
         height: 24px;
+    }
+
+    .header__links {
+        background-color: var(--preto);
+        align-items: center;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        justify-content: space-between;
+    }
+
+    .fa-bars {
+        display: block;
+        color: var(--verde);
+    }
+
+    .header__nav {
+        display: none;
     }
 
     .nav__item {
         font-size: 13px;
     }
 
-    .seach-input {
-        /* width: 60%; */
+    .search {
+        margin-top: 1rem;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 60%;
         font-size: 13px;
+        border: 1px solid black;
     }
 
+    .search-btn {
+        color: var(--preto);
+        border-color: black;
+    }
 }
 
-@media screen and (max-width: 375px) {
-    .header {
-        flex-direction: column;
-    }
-    
-    .header__nav {
-        display: none;
-    }
-
-    .seach-input {
-        /* width: 60%; */
-    }
-}
