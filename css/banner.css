@@ -1,0 +1,25 @@
+.carrossel {
+    display: flex;
+}
+
+.carrossel__banner {
+    display: flex;
+}
+
+.carrossel__banner img {
+    width: 50vw;
+}
+
+.banner__chamada {
+    background-color: var(--roxo);
+    width: 50vw;
+    display: flex;
+    align-items: center;
+
+    padding: 10%;
+}
+
+.banner__chamada img {
+    width: 80%;
+}
+
