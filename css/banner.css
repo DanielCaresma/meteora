@@ -1,5 +1,36 @@
 .carrossel {
     display: flex;
+    position: relative;
+}
+
+.fa-caret-left,
+.fa-caret-right,
+.carrossel__posicoes {
+    position: absolute;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.fa-caret-left,
+.fa-caret-right {
+    top: 50%;
+}
+
+.fa-caret-left {
+    left: 40px;
+}
+
+.fa-caret-right {
+    right: 40px;
+}
+
+.carrossel__posicoes {
+    bottom: 20px;
+    left: calc(50% - 38px);
+}
+
+.fa-minus {
+    opacity: .6;
 }
 
 .carrossel__banner {
