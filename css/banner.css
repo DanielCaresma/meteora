@@ -1,6 +1,8 @@
 .carrossel {
     display: flex;
     position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .fa-caret-left,
