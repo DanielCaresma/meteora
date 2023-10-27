@@ -56,3 +56,23 @@
     width: 80%;
 }
 
+@media screen and (max-width: 375px) {
+    .carrossel__banner {
+        flex-direction: column;
+    }
+
+    .carrossel__banner img {
+        width: 100vw;
+    }
+
+    .banner__chamada {
+        height: 30vh;
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .banner__chamada img {
+        width: 80%;
+    }
+}
