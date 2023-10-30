@@ -1,0 +1,48 @@
+.newsletter {
+    margin: 40px auto;
+    padding: 40px;
+    border: 2px solid black;
+    text-align: center;
+    max-width: 720px;
+}
+
+.newsletter__texto {
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.newsletter__email {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter__email input {
+    border: 1px solid black;
+    padding: 8px 12px;
+    width: 60%;
+}
+
+.newsletter__email button {
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter {
+        margin: 40px;
+    }
+
+    .newsletter__texto {
+        font-weight: 400;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .newsletter {
+        margin: 40px 16px;
+    }
+
+}
