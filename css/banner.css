@@ -1,8 +1,25 @@
+.banner {
+    position: relative;
+}
+
 .carrossel {
     display: flex;
     position: relative;
     margin-bottom: 40px;
     overflow: hidden;
+}
+
+.carrossel li:nth-of-type(1) {
+    background-color: var(--roxo);
+}
+
+.carrossel li:nth-of-type(2) {
+    background-color: var(--coral);
+}
+
+.carrossel li:nth-of-type(3) {
+    background-color: var(--laranja);
+    flex-direction: row-reverse;
 }
 
 .fa-caret-left,
@@ -27,7 +44,7 @@
 }
 
 .carrossel__posicoes {
-    bottom: 20px;
+    bottom: 8px;
     left: calc(50% - 38px);
 }
 
@@ -44,16 +61,27 @@
 }
 
 .banner__chamada {
-    background-color: var(--roxo);
     width: 50vw;
     display: flex;
-    align-items: center;
-
     padding: 10%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner__chamada img {
     width: 80%;
+}
+
+.chamada__titulo {
+    color: var(--branco);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.chamada__texto {
+    color: var(--branco);
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 375px) {
