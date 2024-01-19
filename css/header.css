@@ -8,12 +8,12 @@
 
 .header__links {
     display: flex;
+    gap: 5%;
 }
 
 .header__nav {
     display: flex;
     align-items: center;
-    margin-left: 10px;
 }
 
 .nav__itens {
@@ -29,8 +29,17 @@
     width: max-content;
 }
 
+.search {
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
 .search-input {
-    width: 10.6rem;
+    width: 50%;
+    max-width: 200px;    
     height: 38px;
     padding: 1rem;
     font-size: 15px;
@@ -129,7 +138,7 @@
     .search {
         padding: 1rem;
         width: 100%;
-
+    
         display: flex;
         justify-content: center;
         gap: 10px;
